@@ -1,10 +1,10 @@
-# Dampe - AI-Powered Cloud Storage Platform
+# NEXUS - AI-Powered Cloud Storage Platform
 
 > *"Store Here, Access Anywhere - Powered by AI"*  
 
 ## Overview
 
-Dampe is a modern, intelligent cloud storage platform that combines secure file storage with AI-powered analysis. Built with cutting-edge technologies, it offers seamless file management, smart content analysis, and universal accessibility through your Gmail account.
+Nexus is a modern, intelligent cloud storage platform that combines secure file storage with AI-powered analysis. Built with cutting-edge technologies, it offers seamless file management, smart content analysis, and universal accessibility through your Gmail account.
 
 ## Key Features
 
@@ -92,118 +92,3 @@ dampe/
 ├── drizzle/                 
 └── public/                 
 ```
-
-## Quick Start
-
-### Prerequisites
-- Node.js 18+ or Bun
-- PostgreSQL database (Neon recommended)
-- AWS S3 or Cloudflare R2 bucket
-- Google OAuth credentials
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/quantinium3/dampe.git
-cd dampe
-```
-
-2. **Install dependencies**
-```bash
-bun install
-# or
-npm install
-```
-
-3. **Environment Setup**
-```bash
-cp .env.example .env.local
-```
-
-Configure your `.env.local`:
-```env
-
-DATABASE_URL=
-
-BETTER_AUTH_SECRET=
-BETTER_AUTH_URL=
-
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-GOOGLE_CLIENT_ID=
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-
-R2_TOKEN_VALUE=
-R2_ACCESS_ID=
-R2_SECRET_ACCESS_KEY=
-R2_ENDPOINT=
-R2_BUCKET=
-GROQ_API_KEY=
-GEMINI_API_KEY=
-
-CLOUDFLARE_AI_SEARCH_TOKEN=
-CLOUDFLARE_ACCOUNT_ID=
-
-```
-
-4. **Database Setup**
-```bash
-bun run db:push
-# or
-npm run db:push
-```
-
-5. **Start Development Server**
-```bash
-bun dev
-# or
-npm run dev
-```
-
-Visit `http://localhost:3000` to see your application running!
-
-
-### File Upload & Management
-- Drag-and-drop file uploads
-- Progress tracking with real-time updates
-- File type validation and size limits
-- Bulk operations (delete, analyze)
-
-### AI Analysis Engine
-- **Text Documents**: Summarization, keyword extraction, topic modeling
-- **Images**: Object detection, OCR, color analysis, safety detection
-- **PDFs**: Text extraction, metadata analysis
-- **Office Documents**: Content parsing and analysis
-
-### Search & Discovery
-- Full-text search across all file contents
-- AI-powered semantic search
-- Filter by file type, date, size
-- Tag-based organization
-
-## Security Features
-
-- **Authentication**: Multi-provider OAuth with Better Auth
-- **File Security**: Signed URLs for secure file access
-- **Data Protection**: Encrypted storage with AWS S3/R2
-- **Privacy**: User data isolation and GDPR compliance
-
-## UI Components
-
-Built with modern design principles:
-- **Responsive Design**: Mobile-first approach
-- **Accessibility**: WCAG compliant components
-- **Theme Support**: Dark/light mode toggle
-- **Animations**: Smooth transitions and micro-interactions
-
-## Performance
-
-- **Fast Loading**: Turbopack for lightning-fast builds
-- **Optimized Images**: Next.js Image optimization
-- **Lazy Loading**: Component-level code splitting
-- **Optimized Fetching**: Custom hooks for efficient data management
-
-
----
